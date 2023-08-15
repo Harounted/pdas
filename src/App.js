@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import ProfileCard from "./ProfileCard";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+function App(){
+    return(
+        <div>
+        <div>
+            Personal Degital Assistants
+        </div>
+        <ProfileCard title="Google Assistant" handle="@googleAssistant99"/>
+        <ProfileCard title="Cortana" handle="@cortana32"/>
+        <ProfileCard title="Siri" handle="@siri01"/>
     </div>
-  );
+    )
+   
 }
 
-export default App;
+export default App
