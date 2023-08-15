@@ -1,11 +1,24 @@
-function ProfileCard({title, handle, image}){
+function ProfileCard({title, handle, image, description}){
     // console.log({title, handle})
     return (
 
-        <div>
-            <img src = {image.src} width={250} alt={image.alt}/>
-            <div>Title is {title}</div>
-            <div>Twitter handle is {handle}</div>
+        <div className="card">
+            <div className="card-mage">
+                <figure className="image is-1by1" >
+                    <img className="card-header" src = {image.src} alt={image.alt}/>
+                </figure>
+            </div>
+
+            <div className="card-content">
+                <div className="media-content">
+                    <p className="title is-4">{title}</p>
+                    <p className="subtitle is-6"> {handle}</p>
+                    <div className="content">
+                         <p>{description}</p>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
     );
 }
